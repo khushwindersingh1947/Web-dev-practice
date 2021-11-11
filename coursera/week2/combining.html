@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combination</title>
+</head>
+<style>
+    p.big {       /*all p with class big*/
+        font-size: 50px;
+        background-color: green;
+    }
+    article > p{  /*will target p that is direct child of article*/
+        background-color: grey;
+    }
+    article p{  /*every p inside article no matter what*/
+        background-color: hotpink;
+    }
+    .color p{ /*every p inside element with class color*/
+        color: indigo;
+    }
+</style>
+<body>
+    <p>only p</p>
+    <p class="big">class big</p>
+    <div class="big">div class big</div>
+
+    <article>
+        <p>p inside article</p>
+
+    </article>
+
+    <article>
+        <div>
+            <p>p inside div inside article</p>
+
+        </div>
+    </article>
+
+    <div class="color">
+        <p>p inside div class color</p>
+    </div>
+    <p class="color">p with class color</p>
+
+
+</body>
+</html>

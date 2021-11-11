@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html ,body{
+        height: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid green;
+        height: 100%; /* only works if html and body height set to 100% */
+        /* align-items: flex-end; will take at end*/
+        align-items: flex-end;/*at center*/
+        justify-content: flex-end;
+        
+    }
+    .container > div{
+        
+        border: 1px solid red;
+        height: 20px;
+        /* width: 100%; */
+        text-align: center;
+  
+
+    }
+  
+
+</style>
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+        <div class="profile">profile</div>
+    </nav>
+    
+</body>
+</html>

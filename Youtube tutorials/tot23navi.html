@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .search {
+            padding: 11px 21px;
+            float: right;
+        }
+
+        .navbar {
+            background-color: chocolate;
+            border-radius: 6px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            /*when we float then backgound does not appear because it is out of parent*/
+            list-style: none;
+            margin: 12px 21px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: rgb(4, 8, 17);
+        }
+
+        .navbar li a:hover {
+            color: #e0e953;;
+        }
+        .navbar input{
+            border:2px solid rgb(228, 220, 110) ;
+            border-radius: 5px;
+            padding: 1px 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href=" "> Home</a></li>
+            <li><a href=" "> About</a></li>
+            <li><a href=" "> Service</a></li>
+            <li><a href=" "> Contact us</a></li>
+            <div class="search">
+                This is searchbox
+                <input type="text" name="search" id="search">
+            </div>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

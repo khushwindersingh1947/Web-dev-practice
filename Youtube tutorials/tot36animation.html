@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames and Animations</title>
+</head>
+<style>
+    .contain{
+        display: flex;
+        background-color: blue;
+    }
+    .box{
+        background-color: blanchedalmond;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: khushwinder1;
+        animation-name: khushwinder2;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;/*to remain in forward after end*/
+        animation-fill-mode: alternate;
+        animation-timing-function: ease-in;/*slow at first and then fast*/
+        animation-timing-function: ease-out;/*fast at first and then slow*/
+        animation-delay: 2s; /*wait and then will proceed*/
+        /* animation-direction: reverse; */
+
+
+        /* animation: name duration timing delay iteration-count fill-mode; */
+        animation: khushwinder2 4s ease-in-out 1s 2 forwards;
+    }
+    @keyframes khushwinder1{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 400px;
+        }
+    }
+    
+    @keyframes khushwinder2{
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 250px;
+            left: 0;
+        }
+        50%{
+            top: 250px;
+            left: 250px;
+        }
+        75%{
+            top: 0;
+            left: 250px;
+        }
+        100%{
+            top: 0;
+            left: 0;
+        }
+    }
+
+</style>
+<body>
+    <div class="contain">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .contain{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;/*initialize it*/
+
+            /*Flex properties for container*/
+
+            /* flex-direction: row;by default from left to right */
+
+            /* flex-direction: column; */ 
+
+            /* flex-direction: column-reverse;reverses in a colomn */
+
+             /*reverse by row*/
+             /* flex-direction: row-reverse; */
+
+             /* to wrap and make responsive design very impo!!! */
+             /* flex-wrap: wrap; */
+
+            /* to set two properties together */
+            /* flex-flow: row wrap; */
+
+            /* TO MAKE EVERTYHING center */
+            /* justify-content: center; */
+
+            /* make space between boxes equally not at corners */
+            /* justify-content: space-between; */
+
+            /* make space equally between boxes */
+            /* justify-content: space-evenly; */
+            
+              /* * see in live server ;) less space around corners ut equally between boxes */ 
+            /* justify-content: space-around; */
+            /* to vertically center items */
+            /* align-items: center; */
+            /* to put all the items at end */
+            /* align-items: flex-end; */
+            
+            /* make space vertically between items(column wise) */
+            /* flex-wrap: wrap; */
+            /* align-items: stretch; */
+
+        }
+        .item{
+
+            width: 200px;
+            background-color: blanchedalmond;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px 2px;
+            height: 200px;
+
+        }
+        #item1{
+            /* flex properties for items             */
+            /* big order means the item will be at end */
+            /* order: 2;   */
+            /* while expanding this box will grow the most */
+            /* flex-grow: 3; */
+            /*negative numbers are invalid*/
+
+        }
+        #item2{
+            /* flex-grow: 2; */
+            /* while shrinking it will shrink more */
+            /* flex-shrink: 3; */
+  
+            /*when flex direction is set to row flex basis will control width*/
+            /*when flex direction is set to column flex basis will control height*/
+             flex-basis: 320px;
+        }
+        #item3{
+            /* this takes three values fllex order, shrink and bases repectively*/
+            /* flex: 2 2 350px; */
+            /* it will align itself according to current position relatively */
+            align-self: flex-end;
+            align-self: center;
+            align-self: flex-starts;
+        }
+    </style>
+</head>
+<body>
+<h2> Flexbox tutorial</h2>
+<div class="contain">
+    <div class="item" id="item1">First</div>
+    <div class="item" id="item2">Second</div>
+    <div class="item" id="item3">Third</div>
+    <!-- <div class="item" id="item4">Forth</div>
+    <div class="item" id="item5">fifth</div>
+    <div class="item" id="item6">sixth</div> -->
+</div>    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        display: grid;
+        /* grid-template-columns:  1fr 2fr 1fr; */
+        grid-template-columns:  repeat(3 , 1fr  );
+        grid-gap: 1em;
+        grid-auto-rows: 100px; /*height of all rows*/ /*no matter what it will not change even if content is bigger*/
+        grid-auto-rows: minmax(100px ,auto);/*this is flexible as it will stretch accordingly*//* but it will also stretch others*/
+    }
+    .wrapper > div{
+        background: #eee;
+        padding: 1em;
+    }
+    .wrapper > div:nth-child(odd){
+        background: #ddd;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, dolores! Nemo laudantium delectus ab quo adipisci, suscipit voluptatum illum, eligendi aspernatur quidem cumque totam rem itaque obcaecati ea asperiores? Unde, similique perspiciatis enim voluptatibus rerum repellendus suscipit voluptate exercitationem non?
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

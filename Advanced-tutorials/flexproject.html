@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .container > div
+    {
+        border: 2px solid green;
+        margin: 2px;
+        width: 300px;
+        flex: 1;
+        height: 50px;
+    }
+    @media screen and (max-width:933px) {
+        .container > div
+        {
+            padding: 2px ;
+            margin: 2px;
+        }
+        .container > .home , .container>.search
+        {
+           
+            flex-grow: 1 1 50%;
+           
+
+        }
+        .container{
+            height: 120px;
+        }
+
+        .container > .logout
+        {
+            box-sizing: border-box;
+            flex: 1 1 100%;
+            margin: 2px 3px;
+        }
+        
+    }
+    @media screen and (max-width:633px) {
+        .container
+        {
+            flex-direction: column;
+            height: 170px;
+        }
+        .container > .logout
+        {
+            flex: none;
+        }
+        .container > div
+        {
+            width: auto;
+        }
+
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Logout</div>
+    </div>
+</body>
+</html>

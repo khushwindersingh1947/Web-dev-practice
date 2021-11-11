@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .contain{
+            font-size: 10px;
+            border: 2px solid red;
+            width: 100vw;
+            /* height: 600px; */
+            height: 100vh; /*full height as long as the veiwport*/
+        }
+        h1{
+        text-align: center;
+           
+        }
+        #h1{
+            /* em used when parent is resized their child should set accordingly */
+            /* font-size: 3em; */
+            /* padding: 3em; */
+
+        }
+        #h2{
+        /* rem is better unit which only change respect to base cases of default html */
+            /* padding: 3rem; */
+            /* font-size: 3rem; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <h1 id="h1">This is First</h1>
+        <h1 id="h2">This is Second</h1>
+        <h1 id="h3">This is third</h1>
+    </div>
+</body>
+</html>

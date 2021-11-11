@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SShapes</title>
+</head>
+<style>
+    .square{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .semi-circle{
+        height: 100px;
+        width: 200px;
+        background-color: rosybrown;
+        border-radius: 100px 100px 0px 0px;/*same as hieght of rectangle*/
+    }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-bottom: 200px solid black;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+    .trapezium{
+        height: 100px;
+        border-bottom: 200px solid black;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        width: 100px;
+
+    }
+    .para-gram{
+        height: 100px;
+        width: 200px;
+        background-color: tomato;
+        transform: skew(12deg);
+        margin: 20px;
+    }
+</style>
+<body>
+    <div class="square"></div>
+    <div class="semi-circle">
+    </div>
+    <div class="triangle"></div>
+    <div class="trapezium"></div>
+    <div class="para-gram">
+
+    </div>
+</body>
+</html>

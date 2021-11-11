@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        height: 100px;
+        width: 100px;
+        /* float: left;all p will become inline and width of div will shrink */
+        /* float: left; */
+    }
+    div > section{
+        /* clear: left;means no floating element will be allowed in left of section */
+        clear: both;
+    }
+    #box1{
+        background-color: aqua;
+        float: left;
+    }
+    #box2{
+background-color: black;
+float: right;
+height: 200px;
+    }
+    #box3{
+background-color: blue;
+/* clear: left; now all this box and box4 will come down of box 2 and 1,also margin will not collapse */
+/* clear: right; */
+float: left;
+    }
+    #box4{
+background-color: brown;
+float: right;
+    }
+    .contain{
+        background-color: coral;
+        /* height: 500px; */
+    }
+    .contain p:nth-child(5)
+    {
+        background-color: blueviolet;
+        clear: both;
+    }
+</style>
+<body>
+
+    <div class="contain">
+       <p id="box1"></p>
+       <p id="box2"></p>
+       <p id="box3"></p>
+       <p id="box4"></p>
+       <p></p>
+       <section>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, ipsum laborum exercitationem cupiditate quasi et laboriosam voluptate ullam ea earum ad eveniet quaerat fugiat asperiores illo totam. Earum, necessitatibus quaerat!</section>
+    </div>
+</body>
+</html>

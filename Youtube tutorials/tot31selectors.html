@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    h1{
+        background-color:green;
+        color:beige;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* div p{
+        color:blue;
+        background-color: aliceblue;
+        font-weight: bold;
+    } */
+
+
+    /* this will target direct child p  
+    this will not affect p inside ul li*/
+    div > p{
+        color:blue;
+        background-color: aliceblue;
+        font-weight: bold;
+    }
+
+    /* will apply to elements whose previous sibling is div */
+    div + p{
+        color:antiquewhite;
+        background-color:red;
+    }
+
+</style>
+<body>
+    <h1>
+        This is going to be more advanced about selectors
+    </h1>
+    <div class="contain">
+        <div class="row">
+            <ul>
+                <li class="item"> <p> This is para sf inside li</p></li>
+                <li class="item">This is li</li>
+                <li class="item">This is li</li>
+                <li class="item">This is li</li>
+                <p>THis para sf is inside ul</p>
+            </ul>
+            <p>This is para sf</p>
+        </div>
+        <p>This is another para sf</p>
+    </div>
+    <p>this is outer para</p>
+</body>
+</html>
